@@ -157,7 +157,7 @@ export default function Home() {
           <div className="bg-[#1A1A1A] rounded-2xl border border-yellow-500/20 overflow-hidden">
             <div className="relative h-48">
               <Image
-                src="/images/meal.jpg"
+                src="/images/meals.jpg"
                 alt="Meals"
                 fill
                 className="object-cover"
