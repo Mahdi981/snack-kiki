@@ -40,7 +40,7 @@ export default function Home() {
             طعم لا يُقاوم!
           </h2>
           <p className="text-xl md:text-2xl text-gray-200 mb-10 max-w-2xl mx-auto drop-shadow">
-            ساندويشات، متبلات، مناقيش، صاج، ووجبات. توصيل لكل عين بعال والجوار.
+            ساندويشات، متبلات، مناقيش، ووجبات. توصيل لكل عين بعال والجوار.
           </p>
           <a
             href="#contact"
@@ -62,7 +62,7 @@ export default function Home() {
           <div className="bg-[#1A1A1A] rounded-2xl border border-yellow-500/20 overflow-hidden">
             <div className="relative h-48">
               <Image
-                src="/images/shawarma.jpg"
+                src="/images/snack2.jpg"
                 alt="Sandwiches"
                 fill
                 className="object-cover"
@@ -119,7 +119,7 @@ export default function Home() {
                   ["كاجن بلا حر", "900,000"],
                   ["فرانسيسكو", "900,000"],
                   ["ناغتس", "800,000"],
-                  ["كرسيبي ", "1,000,000"],
+                  ["كرسيبي", "1,200,000"],
                   ["تشكن ساب", "900,000"],
                 ].map(([name, price]) => (
                   <li key={name} className="flex justify-between">
@@ -149,26 +149,6 @@ export default function Home() {
                 <li>بيتزا</li>
                 <li>لحم بعجين</li>
                 <li>سبانخ</li>
-              </ul>
-            </div>
-          </div>
-
-          {/* Saj */}
-          <div className="bg-[#1A1A1A] rounded-2xl border border-yellow-500/20 overflow-hidden">
-            <div className="relative h-48">
-              <Image
-                src="/images/saj.jpg"
-                alt="Saj"
-                fill
-                className="object-cover"
-              />
-            </div>
-            <div className="p-6">
-              <h4 className="text-2xl font-bold mb-4 text-yellow-400">🥙 صاج</h4>
-              <ul className="space-y-2 text-gray-200">
-                <li>صاج دجاج</li>
-                <li>صاج لحمة</li>
-                <li>صاج مشكل</li>
               </ul>
             </div>
           </div>
@@ -227,6 +207,80 @@ export default function Home() {
                   </li>
                 ))}
               </ul>
+            </div>
+          </div>
+
+          {/* Appetizers & Meals - NEW SECTION */}
+          <div className="bg-[#1A1A1A] rounded-2xl border border-yellow-500/20 overflow-hidden md:col-span-2">
+            <div className="p-6">
+              <h4 className="text-2xl font-bold mb-6 text-yellow-400 text-center">🍽️ مقبلات ومأكولات</h4>
+              
+              <div className="grid grid-cols-2 md:grid-cols-5 gap-4">
+                {/* فتوش */}
+                <div className="text-center">
+                  <div className="relative w-full h-32 rounded-xl overflow-hidden mb-3">
+                    <Image
+                      src="/images/fatoush1.jpg"
+                      alt="فتوش"
+                      fill
+                      className="object-cover"
+                    />
+                  </div>
+                  <p className="text-gray-200 font-semibold">فتوش</p>
+                </div>
+
+                {/* تبولة */}
+                <div className="text-center">
+                  <div className="relative w-full h-32 rounded-xl overflow-hidden mb-3">
+                    <Image
+                      src="/images/tabbouleh.jpg"
+                      alt="تبولة"
+                      fill
+                      className="object-cover"
+                    />
+                  </div>
+                  <p className="text-gray-200 font-semibold">تبولة</p>
+                </div>
+
+                {/* كباب */}
+                <div className="text-center">
+                  <div className="relative w-full h-32 rounded-xl overflow-hidden mb-3">
+                    <Image
+                      src="/images/kebab.jpg"
+                      alt="كباب"
+                      fill
+                      className="object-cover"
+                    />
+                  </div>
+                  <p className="text-gray-200 font-semibold">كباب</p>
+                </div>
+
+                {/* سمبوسك */}
+                <div className="text-center">
+                  <div className="relative w-full h-32 rounded-xl overflow-hidden mb-3">
+                    <Image
+                      src="/images/sambousek.jpg"
+                      alt="سمبوسك"
+                      fill
+                      className="object-cover"
+                    />
+                  </div>
+                  <p className="text-gray-200 font-semibold">سمبوسك</p>
+                </div>
+
+                {/* رقائق */}
+                <div className="text-center">
+                  <div className="relative w-full h-32 rounded-xl overflow-hidden mb-3">
+                    <Image
+                      src="/images/raqeeq1.jpg"
+                      alt="رقائق"
+                      fill
+                      className="object-cover"
+                    />
+                  </div>
+                  <p className="text-gray-200 font-semibold">رقائق</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
